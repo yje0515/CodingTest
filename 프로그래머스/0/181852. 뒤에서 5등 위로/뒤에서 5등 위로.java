@@ -8,4 +8,5 @@ class Solution {
         }
         return answer;
     }
+    // return Arrays.stream(num_list).sorted().skip(5).toArray();
 }
