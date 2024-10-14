@@ -8,6 +8,7 @@ class Solution {
             }else{
                 answer.append(Character.toLowerCase(c));
             }
+            //공백이면 다음 단어 첫 문자가 대문자
             if(c == ' '){
                 isStr = true;
             }else{
