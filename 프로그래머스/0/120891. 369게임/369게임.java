@@ -5,7 +5,7 @@ class Solution {
             if(order%10==3||order%10==6||order%10==9){
                 count++;
             }
-            order = order/10;
+            order /= 10;
         }
         return count;
     }
