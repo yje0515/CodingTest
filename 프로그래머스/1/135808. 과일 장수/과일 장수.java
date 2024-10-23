@@ -1,6 +1,6 @@
 import java.util.*;
 class Solution {
-    public int solution(int k, int m, int[] score) {//1~k점 최저점수*갯수=한
+    public int solution(int k, int m, int[] score) {
         Arrays.sort(score);
         int answer = 0;
         int index = 0;
