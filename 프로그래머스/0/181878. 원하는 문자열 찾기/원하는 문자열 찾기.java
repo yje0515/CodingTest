@@ -1,7 +1,5 @@
 class Solution {
     public int solution(String myString, String pat) {
-        myString=myString.toLowerCase();
-        pat=pat.toLowerCase();
-        return myString.contains(pat)?1:0;
+        return myString.toLowerCase().contains(pat.toLowerCase())?1:0;
     }
 }
