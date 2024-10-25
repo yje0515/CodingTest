@@ -1,21 +1,21 @@
 class Solution {
     public String solution(String s) {
-        StringBuilder answer =new StringBuilder();
-        String[] arr = s.split(" ",-1);
-        for(int i=0;i<arr.length;i++){
-            String str = arr[i];
-            for(int j=0; j<str.length();j++){
-                char c =str.charAt(j);
-                if(j%2==0){
-                    answer.append(Character.toUpperCase(c));
-                }else{
-                    answer.append(Character.toLowerCase(c));
+        StringBuilder result = new StringBuilder();
+        int index = 0; //단어인덱스
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == ' ') { //공백
+                result.append(c);
+                index = 0; //초기화
+            } else {
+                if (index % 2 == 0) { //짝수
+                    result.append(Character.toUpperCase(c));
+                } else { //홀수
+                    result.append(Character.toLowerCase(c));
                 }
-            }
-            if(i<arr.length-1){
-                answer.append(" ");
+                index++;
             }
         }
-        return answer.toString();
+        return result.toString();
     }
 }
