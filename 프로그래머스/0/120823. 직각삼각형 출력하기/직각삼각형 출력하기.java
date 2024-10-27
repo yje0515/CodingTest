@@ -5,10 +5,8 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for(int i=1; i<=n;i++){
-            int index = 0;
-            while(i!=index){
+            for(int j=0;j<i;j++){
                 System.out.print("*");
-                index++;
             }
             System.out.println();
         }
