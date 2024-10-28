@@ -1,10 +1,9 @@
 class Solution {
     public String solution(String str1, String str2) {
         String answer = "";
-        String[] a = str1.split("");
-        String[] b = str2.split("");
-        for(int i=0; i<a.length;i++){
-            answer+=a[i]+b[i];
+        for(int i=0; i<str1.length();i++){
+            answer+=str1.charAt(i);
+            answer+=str2.charAt(i);
         }
         return answer;
     }
