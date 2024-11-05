@@ -15,7 +15,7 @@ class Solution {
                         break;
                     }
                 }
-                if(!isSkip){
+                if(!isSkip){//skip에 있는 알파벳은 제외
                     count++;
                 }
             }
