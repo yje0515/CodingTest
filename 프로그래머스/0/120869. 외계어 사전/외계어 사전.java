@@ -1,14 +1,13 @@
 class Solution {
     public int solution(String[] spell, String[] dic) {
-        int answer = 0;
         for(String a:dic){
-            String tmp = "";
+            int tmp = 0;
             for(String b:spell){
                 if(a.contains(b)){
-                    tmp+=b;
+                    tmp++;
                 }
             }
-            if(tmp.length()==spell.length){
+            if(tmp==spell.length){
                 return 1;
             }
         }
